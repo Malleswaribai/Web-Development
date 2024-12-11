@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zeroop</title>
+    <!-- inline css , internal css and external -->
+    <style>
+        h1  {
+            background-color: red;
+            color: yellow;
+        }
+    </style>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./one.js"></script>
+</head>
+<body>
+    <h1 style="background-color: blue;">Jayaram</h1> 
+    <!-- style="background-color: red; color:green;" -->
+    <!-- using style attribute with in the html tags this type of styling is inline css -->
+    <h2 id="two">Sorry</h2>
+    <input type="text" id="input">
+    <button onclick="fun()">Hello</button>
+    <script>
+        function generateRandomColor() {
+            let color = "#";
+            for (let i = 0; i < 6; i++) {
+                color += Math.floor(Math.random() * 16).toString(16);
+            }
+            return color;
+        }
+       const h2Element = document.querySelector("#two"); 
+       console.log(h2Element); 
+       h2Element.addEventListener('click' , () => {
+            // console.log("Hey I am h2 i got called"); 
+            h2Element.style.backgroundColor = generateRandomColor();
+       } )
+
+       h2Element.addEventListener('mouseover' , () => {
+            console.log("I got called");
+            h2Element.style.color = generateRandomColor();
+       })
+
+       const inputElement = document.querySelector("#input");
+
+    </script>
+</body>
+</html>
+
+<!-- two types of this html page get rendering -->
+
+<!-- you know this HTML and you will open in browser using file system  or through network-->

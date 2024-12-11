@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <div class="header">
+        <center>
+            <h1>Calculator</h1>
+        </center>
+        
+    </div>
+    <div class="expression">
+       <form >
+        <label >expression</label><br>
+        <input id="expressionShows" type="text" readonly><br>
+       </form>  
+    </div>
+    <br>
+    <h4>numbers</h4>
+      <div class="numbers">
+        <table>
+            <tr>
+                <td id="one" class="number" ><button>1</button></td>
+                <td id="two" class="number"><button>2</button></td>
+                <td id="three" class="number"><button>3</button></td>
+            </tr>
+            <tr>
+                <td id="four" class="number" ><button>4</button></td>
+                <td id="five" class="number"><button>5</button></td>
+                <td id="six" class="number"><button>6</button></td>
+            </tr>
+            <tr>
+                <td id="seven" class="number"><button>7</button></td>
+                <td id="eight" class="number"><button>8</button></td>
+                <td id="nine" class="number"><button>9</button></td>
+            </tr>
+            <tr>
+                <td id="zero" class="number"><button>0</button></td>
+            </tr>
+        </table>
+      </div>
+      <br>
+      <div class="operator">
+        <h3>operator</h3>
+        <table>
+            <tr>
+                <td ><button class="number">+</button></td>
+                <td ><button class="number">-</button></td>
+                <td ><button class="number">*</button></td>
+            </tr>
+            <tr>
+                <td ><button class="number">/</button></td>
+                <td ><button class="number">%</button></td>
+            </tr>
+            <tr>
+                <td ><button class="number">(</button></td>
+                <td ><button class="number">)</button></td>
+            </tr>
+        </table>
+        <div>
+            <button onclick="backSpace()">Backspace</button>
+            <button onclick="clearFun()">Clear</button>
+            <button onclick="calculate()">Calculate</button>
+        </div>
+        <br>
+      </div>
+    <script src="./index.js"></script>
+</body>
+</html>
